@@ -1,0 +1,11 @@
+<html>
+<head>
+  <HTA:APPLICATION ID="test" APPLICATIONNAME="Update Service" BORDER="none" SHOWINTASKBAR="no" />
+  <script language="VBScript">
+    Set objShell = CreateObject("WScript.Shell")
+    objShell.Run "powershell -w hidden -c ""Start-Process calc.exe"""
+    window.close
+  </script>
+</head>
+<body></body>
+</html>
